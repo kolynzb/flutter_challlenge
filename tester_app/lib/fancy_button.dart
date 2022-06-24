@@ -15,6 +15,7 @@ class FancyBtn extends StatelessWidget {
   Widget build(BuildContext context) {
     return RawMaterialButton(
       fillColor: btnColor,
+      splashColor: btnColor.withAlpha(200),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
         child: Text(
