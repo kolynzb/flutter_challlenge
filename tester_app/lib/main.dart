@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
             const ElevatedButton(onPressed: answerQuestion, child: Text('Yes')),
             const ElevatedButton(onPressed: answerQuestion, child: Text('no')),
             const ElevatedButton(onPressed: null, child: Text('Yes')),
+            // ignore: avoid_print
             FancyBtn(btnText: "Hey", onPress: () => print("btn clicked"))
           ],
         ),

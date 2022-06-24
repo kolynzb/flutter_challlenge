@@ -18,11 +18,15 @@ class FancyBtn extends StatelessWidget {
       splashColor: btnColor.withAlpha(200),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
-        child: Row(children: <Widget>[
-          const Icon(
-            Icons.arrow_circle_right_outlined,
-            color: Colors.white,
+        child: Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
+          const RotatedBox(
+            quarterTurns: 3,
+            child: Icon(
+              Icons.arrow_circle_right_outlined,
+              color: Colors.white,
+            ),
           ),
+          const SizedBox(width: 10),
           Text(
             btnText.toUpperCase(),
             style: const TextStyle(color: Colors.white),
