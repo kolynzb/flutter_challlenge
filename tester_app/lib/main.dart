@@ -19,13 +19,12 @@ class MyApp extends StatelessWidget {
           title: const Text('My first app'),
         ),
         body: Column(
-          children:  <Widget>[
+          children: <Widget>[
             Text(questions[0]),
             const ElevatedButton(onPressed: answerQuestion, child: Text('Yes')),
             const ElevatedButton(onPressed: answerQuestion, child: Text('no')),
             const ElevatedButton(onPressed: null, child: Text('Yes')),
-            FancyBtn(btnText: "Hey", onPress: onPress)
-
+            FancyBtn(btnText: "Hey", onPress: () => print("btn clicked"))
           ],
         ),
       ),

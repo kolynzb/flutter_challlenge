@@ -18,10 +18,16 @@ class FancyBtn extends StatelessWidget {
       splashColor: btnColor.withAlpha(200),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
-        child: Text(
-          btnText.toUpperCase(),
-          style: const TextStyle(color: Colors.white),
-        ),
+        child: Row(children: <Widget>[
+          const Icon(
+            Icons.arrow_circle_right_outlined,
+            color: Colors.white,
+          ),
+          Text(
+            btnText.toUpperCase(),
+            style: const TextStyle(color: Colors.white),
+          ),
+        ]),
       ),
       onPressed: onPress,
       shape: const StadiumBorder(),
