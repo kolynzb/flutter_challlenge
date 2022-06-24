@@ -16,7 +16,7 @@ class FancyBtn extends StatelessWidget {
     return RawMaterialButton(
       fillColor: btnColor,
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
         child: Text(
           btnText.toUpperCase(),
           style: const TextStyle(color: Colors.white),
